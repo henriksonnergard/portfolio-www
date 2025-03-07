@@ -113,12 +113,13 @@ h3 {
 .hero {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   gap: var(--space-xl);
 }
 
 .portrait {
-  height: 230px;
-  width: 230px;
+  height: clamp(7.188rem, 2.054rem + 20.536vw, 14.375rem);
+  width: clamp(7.188rem, 2.054rem + 20.536vw, 14.375rem);
   object-fit: cover;
   clip-path: circle(50%);
 }
